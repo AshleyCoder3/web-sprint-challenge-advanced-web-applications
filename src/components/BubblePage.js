@@ -11,11 +11,11 @@ const BubblePage = () => {
   useEffect(() => {
     fetchColorService()
       .then(res => {
-        console.log("🚀 ~ file: BubblePage.js ~ line 13 ~ useEffect ~ res", res)
+        //console.log("🚀 ~ file: BubblePage.js ~ line 13 ~ useEffect ~ res", res)
         setColors(res.data)
       })
       .catch(err => {
-        console.log('error in useEffect, BubblePage', err)
+        //console.log('error in useEffect, BubblePage', err)
       })
   }, [])
 
